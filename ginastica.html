@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto: Análise Ginástica Artística Paris 2024 - Guilherme Lavezzo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #5c4d7d; /* Cor principal do texto do corpo */
+        }
+        .project-tag {
+            background-color: #e0e7ff;
+            color: #2e6f95;
+        }
+        .project-tag-alt {
+            background-color: #f0f9ff;
+            color: #2e6f95;
+        }
+        .btn-primary {
+            background-color: #2e6f95;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1c4b69; /* Um tom mais escuro de #2e6f95 */
+        }
+        .btn-secondary {
+            background-color: #5c4d7d;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #3e3557; /* Um tom mais escuro de #5c4d7d */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header da Página de Detalhes -->
+    <header class="bg-white shadow-md py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-[#5c4d7d]">Detalhes do Projeto</h1>
+            <a href="portfolio.html" class="btn-secondary py-2 px-4 rounded-lg text-sm font-medium">
+                &larr; Voltar ao Portfólio
+            </a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal do Projeto -->
+    <main class="container mx-auto px-6 py-10">
+        <article class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <!-- Título do Projeto -->
+            <h2 class="text-3xl md:text-4xl font-bold text-[#2e6f95] mb-6">
+                Análise de Dados da Final de Ginástica Artística - Paris 2024
+            </h2>
+
+            <!-- Descrição Geral -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-[#5c4d7d] mb-3">Visão Geral do Projeto</h3>
+                <p class="text-base md:text-lg leading-relaxed mb-4">
+                    Este projeto consiste em uma análise detalhada dos dados da final de ginástica artística dos Jogos Olímpicos de Paris 2024. O objetivo foi explorar o desempenho dos 24 atletas finalistas, utilizando técnicas de análise estatística e visualização de dados para extrair insights sobre as pontuações em diferentes aparelhos.
+                </p>
+                <p class="text-base md:text-lg leading-relaxed">
+                    A base de dados foi coletada a partir do relatório oficial dos Jogos Olímpicos de Paris 2024, garantindo a precisão e relevância das informações analisadas.
+                </p>
+            </section>
+
+            <!-- Tecnologias Utilizadas -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-[#5c4d7d] mb-4">Tecnologias Utilizadas</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="project-tag inline-block text-sm font-semibold px-3 py-1 rounded-full">Python</span>
+                    <span class="project-tag-alt inline-block text-sm font-semibold px-3 py-1 rounded-full">Jupyter Notebook</span>
+                    <span class="project-tag inline-block text-sm font-semibold px-3 py-1 rounded-full">Pandas</span>
+                    <span class="project-tag-alt inline-block text-sm font-semibold px-3 py-1 rounded-full">Plotly</span>
+                    <span class="project-tag inline-block text-sm font-semibold px-3 py-1 rounded-full">Análise Estatística</span>
+                </div>
+            </section>
+
+            <!-- Principais Análises e Visualizações -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-[#5c4d7d] mb-3">Principais Análises e Visualizações</h3>
+                <p class="text-base md:text-lg leading-relaxed mb-4">
+                    O núcleo da análise foi conduzido em um Jupyter Notebook, onde diversas técnicas foram aplicadas:
+                </p>
+                <ul class="list-disc list-inside text-base md:text-lg leading-relaxed space-y-2">
+                    <li>Cálculo de estatísticas descritivas como média, mediana e moda das pontuações por aparelho.</li>
+                    <li>Geração de boxplots para visualizar a distribuição das notas e identificar outliers em cada aparelho.</li>
+                    <li>Criação de histogramas para entender a frequência das pontuações.</li>
+                    <li>Análise comparativa do desempenho entre os atletas e aparelhos.</li>
+                </ul>
+            </section>
+
+            <!-- Imagens/Visualizações (Placeholders) -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-[#5c4d7d] mb-4">Exemplos de Visualizações</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Placeholder para Imagem 1 -->
+                    <div class="bg-gray-200 p-4 rounded-lg text-center">
+                        <img src="https://github.com/Godofin/portfolio-lavezzo/blob/main/boxplot.png?raw=true" alt="Exemplo de Boxplot do projeto" class="w-full h-auto rounded-md object-cover mb-2" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Visualização+Indisponível';">
+                        <p class="text-sm text-[#5c4d7d]"><em>Descrição: Boxplot comparando notas por aparelho.</em></p>
+                    </div>
+                    <!-- Placeholder para Imagem 2 -->
+                    <div class="bg-gray-200 p-4 rounded-lg text-center">
+                        <img src="https://github.com/Godofin/portfolio-lavezzo/blob/main/hist.png?raw=true" alt="Exemplo de Histograma do projeto" class="w-full h-auto rounded-md object-cover mb-2" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Visualização+Indisponível';">
+                        <p class="text-sm text-[#5c4d7d]"><em>Descrição: Histograma da distribuição de pontuações de um aparelho específico.</em></p>
+                    </div>
+                </div>
+                <p class="mt-4 text-sm text-gray-500">
+                </p>
+            </section>
+
+            <!-- Link para o Repositório -->
+            <section class="text-center mt-10">
+                <a href="https://github.com/Godofin/ginastica-artistica-2024" target="_blank" rel="noopener noreferrer" class="btn-primary py-3 px-6 rounded-lg text-lg font-medium inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    Ver Repositório no GitHub
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2e6f95] text-gray-200 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-100">&copy; <span id="currentYearDetail"></span> Guilherme Henrique Lavezzo. Todos os direitos reservados.</p>
+            <p class="text-sm mt-1 text-gray-300">
+                Construído com <a href="https://tailwindcss.com/" class="text-gray-100 hover:text-white" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYearDetail').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

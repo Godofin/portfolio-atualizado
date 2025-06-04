@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Guilherme Henrique Lavezzo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #5c4d7d; /* Cor principal do texto do corpo */
+        }
+        /* Estilos para a Linha do Tempo */
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+            padding-left: 2.5rem;
+            border-left: 2px solid #e5e7eb;
+        }
+        .timeline-item:last-child {
+            border-left: 2px solid #e5e7eb;
+            padding-bottom: 0;
+        }
+        .timeline-item:last-child::before {
+            content: '';
+            position: absolute;
+            left: -2px;
+            bottom: 0;
+            width: 2px;
+            height: 1.5rem;
+            background-color: #f3f4f6;
+        }
+        .timeline-point {
+            position: absolute;
+            left: -0.575rem;
+            top: 0.125rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-color: #2e6f95;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+        }
+        .project-tag {
+            background-color: #e0e7ff;
+            color: #2e6f95;
+        }
+        .project-tag-alt {
+            background-color: #f0f9ff;
+            color: #2e6f95;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-8 md:py-12">
+        <div class="container mx-auto px-6">
+            <!-- Container principal do header: imagem e texto -->
+            <div class="flex flex-col items-center md:flex-row md:items-start mb-6">
+                <!-- Profile Image -->
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQF0B7kxki3CBg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1687870169586?e=1754524800&v=beta&t=VU3XR8PgQ1CPaeTC3xbnVRFWieRnP62KV6D97tpzqLo"
+                     alt="Foto de Perfil de Guilherme Henrique Lavezzo"
+                     class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg mb-4 md:mb-0 md:mr-8 flex-shrink-0">
+                <!-- Name, Role, and Social Icons -->
+                <div class="flex flex-col items-center text-center md:items-start md:text-left md:pt-4">
+                    <h1 class="text-3xl md:text-4xl font-bold text-[#5c4d7d]">Guilherme Henrique Lavezzo</h1>
+                    <p class="text-xl md:text-2xl text-[#2e6f95] mt-1">Cientista de Dados</p>
+                    <!-- Social Icons -->
+                    <div class="mt-3 flex space-x-4">
+                        <a href="https://www.linkedin.com/in/guilherme-henrique-lavezzo-ads/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="text-[#5c4d7d] hover:text-[#2e6f95] transition-colors duration-300">
+                            <svg class="w-6 h-6 md:w-7 md:h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Godofin" target="_blank" rel="noopener noreferrer" title="GitHub" class="text-[#5c4d7d] hover:text-black transition-colors duration-300">
+                            <svg class="w-6 h-6 md:w-7 md:h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Description -->
+            <div>
+                <hr class="my-4 border-gray-300">
+                <p class="mt-4 text-base md:text-lg text-[#5c4d7d] text-center md:text-left"> 
+                    Transformo dados complexos em inteligência estratégica de negócios através de ciência de dados, arquiteturas modernas e análises avançadas. Com expertise em todo o ciclo de vida dos dados, desenvolvo modelos preditivos e implemento soluções escaláveis que capacitam organizações a tomar decisões baseadas em evidências.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-6 py-10">
+
+        <!-- Certifications Section -->
+        <section id="certificacoes" class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-[#5c4d7d] border-b-2 border-[#2e6f95] pb-2">
+                Certificações
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Certification Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center"> 
+                    <a href="https://learn.microsoft.com/pt-br/users/guilhermehenriquelavezzo-1293/credentials/b3299ac396f08122?ref=https%3A%2F%2Fgithub.com%2F" target="_blank" rel="noopener noreferrer" title="Ver Credencial Microsoft AI Fundamentals" class="block w-28 h-28 mb-4 hover:opacity-80 transition-opacity duration-300">
+                        <div class="w-full h-full bg-gray-100 rounded-md flex items-center justify-center overflow-hidden p-2 shadow-sm">
+                            <img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Badge Microsoft Certified: Azure AI Fundamentals" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-semibold text-[#2e6f95] mb-1">Microsoft Certified: Conceitos básicos da IA do Azure</h3>
+                    <p class="text-sm text-[#5c4d7d] mb-1">Microsoft</p>
+                    <p class="text-xs text-gray-500">Data de Emissão: Jul 2024</p>
+                    <a href="https://learn.microsoft.com/pt-br/users/guilhermehenriquelavezzo-1293/credentials/b3299ac396f08122?ref=https%3A%2F%2Fgithub.com%2F" class="text-[#2e6f95] hover:text-[#1c4b69] mt-2 inline-block text-sm font-medium" target="_blank" rel="noopener noreferrer">
+                        Ver Credencial Detalhada &rarr;
+                    </a>
+                </div>
+
+                <!-- Certification Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                    <a href="https://learn.microsoft.com/pt-br/users/guilhermehenriquelavezzo-1293/credentials/d38a6dda4af964ca?ref=https%3A%2F%2Fgithub.com%2F" target="_blank" rel="noopener noreferrer" title="Ver Credencial Databricks Spark" class="block w-28 h-28 mb-4 hover:opacity-80 transition-opacity duration-300">
+                        <div class="w-full h-full bg-gray-100 rounded-md flex items-center justify-center overflow-hidden p-2 shadow-sm">
+                            <img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Badge Databricks Certified Associate Developer for Apache Spark" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-semibold text-[#2e6f95] mb-1">Microsoft Certified: Azure AI Engineer Associate</h3>
+                    <p class="text-sm text-[#5c4d7d] mb-1">Microsoft</p>
+                    <p class="text-xs text-gray-500">Data de Emissão: Mai 2025</p>
+                    <a href="https://learn.microsoft.com/pt-br/users/guilhermehenriquelavezzo-1293/credentials/d38a6dda4af964ca?ref=https%3A%2F%2Fgithub.com%2F" class="text-[#2e6f95] hover:text-[#1c4b69] mt-2 inline-block text-sm font-medium" target="_blank" rel="noopener noreferrer">
+                        Ver Credencial Detalhada &rarr;
+                    </a>
+                </div>
+
+                <!-- Certification Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                     <a href="https://credentials.databricks.com/59e463fc-a95f-4bd2-82f7-61ff6663ae23#acc.R0jKO4on" target="_blank" rel="noopener noreferrer" title="Ver Outra Credencial" class="block w-28 h-28 mb-4 hover:opacity-80 transition-opacity duration-300">
+                        <div class="w-full h-full bg-gray-100 rounded-md flex items-center justify-center overflow-hidden p-2 shadow-sm">
+                            <img src="https://camo.githubusercontent.com/062e257fe0da1bbea29375ee4fe9faf9638af021d2c0c824ab736d428c43d571/68747470733a2f2f74656d706c617465732e696d616765732e63726564656e7469616c2e6e65742f31363835393832323731353832353535353931323938313632373632343235392e706e67" alt="Badge de Outra Certificação" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-semibold text-[#2e6f95] mb-1">Databricks Academy Accreditation - Generative AI Fundamentals</h3>
+                    <p class="text-sm text-[#5c4d7d] mb-1">Databricks</p>
+                    <p class="text-xs text-gray-500">Data de Emissão: Julho 2023</p>
+                     <a href="https://credentials.databricks.com/59e463fc-a95f-4bd2-82f7-61ff6663ae23#acc.R0jKO4on" class="text-[#2e6f95] hover:text-[#1c4b69] mt-2 inline-block text-sm font-medium" target="_blank" rel="noopener noreferrer">
+                        Ver Credencial Detalhada &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experiencia" class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-[#5c4d7d] border-b-2 border-[#2e6f95] pb-2">
+                Linha do Tempo Profissional
+            </h2>
+            <div class="relative">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-[#2e6f95]">2024 - Atualmente</h3>
+                        <p class="mt-1 text-md text-[#5c4d7d] font-medium">Zé Delivery (via Programmers)</p>
+                        <p class="text-sm text-[#5c4d7d]">Atuação na área de Antifraude, desenvolvendo e implementando soluções baseadas em dados para detecção e prevenção de fraudes.</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-[#2e6f95]">2023 - 2024</h3>
+                        <p class="mt-1 text-md text-[#5c4d7d] font-medium">Ambev (via Programmers)</p>
+                        <p class="text-sm text-[#5c4d7d]">Responsável por TechOps, otimizando processos e garantindo a estabilidade e performance de sistemas críticos.</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-[#2e6f95]">2022 - 2023</h3>
+                        <p class="mt-1 text-md text-[#5c4d7d] font-medium">Programmers (Estágio)</p>
+                        <p class="text-sm text-[#5c4d7d]">Estágio em desenvolvimento, participando de projetos variados e adquirindo experiência em [mencionar tecnologias/áreas].</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-[#2e6f95]">2020 - 2022</h3>
+                        <p class="mt-1 text-md text-[#5c4d7d] font-medium">Supley (Grupo Supley)</p>
+                        <p class="text-sm text-[#5c4d7d]">Trabalho na área de E-commerce, focado em [mencionar responsabilidades, ex: análise de dados de vendas, otimização de campanhas].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projetos">
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-[#5c4d7d] border-b-2 border-[#2e6f95] pb-2">
+                    Projetos em Destaque
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project Card 1: Ginástica Artística -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/600x400/455e89/ffffff?text=Análise+Ginástica" alt="Imagem do Projeto de Análise de Ginástica Artística" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagem+Indisponível';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#2e6f95] mb-2">Análise de Dados: Ginástica Artística Paris 2024</h3>
+                            <p class="text-[#5c4d7d] mb-4 text-sm">
+                                Análise exploratória e visualização de dados da final de ginástica artística dos Jogos Olímpicos de Paris 2024, utilizando Python e bibliotecas como Pandas e Plotly.
+                            </p>
+                            <div class="mb-3">
+                                <span class="project-tag inline-block text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded-full">Python</span>
+                                <span class="project-tag-alt inline-block text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded-full">Pandas</span>
+                                <span class="project-tag inline-block text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded-full">Plotly</span>
+                                <span class="project-tag-alt inline-block text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded-full">Jupyter Notebook</span>
+                                <span class="project-tag inline-block text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded-full">Análise de Dados</span>
+                            </div>
+                            <a href="detalhe_projeto_ginastica.html" class="text-[#2e6f95] hover:text-[#1c4b69] font-medium text-sm">
+                                Ver Detalhes &rarr;
+                            </a>
+                             <a href="https://github.com/Godofin/ginastica-artistica-2024" class="text-[#5c4d7d] hover:text-[#3e3557] font-medium text-sm ml-4" target="_blank" rel="noopener noreferrer">
+                                Repositório (GitHub) &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                <!-- Project Card 2 -->
+                <!-- <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/5c4d7d/ffffff?text=Análise+Preditiva" alt="Imagem do Projeto de Análise Preditiva" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Imagem+Indisponível';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-[#2e6f95] mb-2">Modelo de Análise Preditiva e Dashboard Interativo</h3>
+                        <p class="text-[#5c4d7d] mb-4 text-sm">
+                            Desenvolvimento de um modelo de machine learning para prever [ex: churn de clientes, demanda de vendas] e criação de um dashboard em Power BI para visualização dos resultados e KPIs.
+                        </p>
+                         <div class="mb-3">
+                            <span class="project-tag inline-block text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Ciência de Dados</span>
+                            <span class="project-tag-alt inline-block text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python (Scikit-learn)</span>
+                            <span class="project-tag inline-block text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Power BI</span>
+                            <span class="project-tag-alt inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full mt-1">SQL</span>
+                            <span class="project-tag inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full mt-1">BI</span>
+                        </div>
+                        <a href="#" class="text-[#2e6f95] hover:text-[#1c4b69] font-medium text-sm" target="_blank" rel="noopener noreferrer">
+                            Ver Dashboard &rarr;
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2e6f95] text-gray-200 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-100">&copy; <span id="currentYear"></span> Guilherme Henrique Lavezzo. Todos os direitos reservados.</p>
+            <p class="text-sm mt-1 text-gray-300">
+                Construído com <a href="https://tailwindcss.com/" class="text-gray-100 hover:text-white" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>.
+            </p>
+            <div class="mt-4">
+                <a href="https://www.linkedin.com/in/guilherme-henrique-lavezzo-ads/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mx-2">LinkedIn</a>
+                <a href="https://github.com/Godofin" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white mx-2">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
